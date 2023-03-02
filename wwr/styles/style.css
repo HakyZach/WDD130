@@ -81,6 +81,8 @@ h2 {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    background-color: brown;
+    color:gold;
 }
 footer {
     background-color: #6f7364;
