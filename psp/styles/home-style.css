@@ -2,3 +2,27 @@ body{
     background-color:#b8860b
     
 }
+.hike, .lake{
+    width: 500px;
+}
+.accordion {
+    background-color: #F5F7DC;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 55%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #F5F7DC;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #F5F7DC;
+    display: none;
+    overflow: hidden;
+    width: 52.3%;
+}

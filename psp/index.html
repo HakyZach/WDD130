@@ -23,18 +23,49 @@
     </nav>
 </header>
 
-    </section>
-</div>
 <main class="home-grid">
-
-    <img class="hike" src="images/hike.jpg" alt="hiking image">
+    
+    <img class="hike" src="styles/images/hike.jpg" alt="hiking image">
     <p>Outdoors, there are many things to do and places to see, and we're here to make sure you are prepared for it all!</p>
-    <img class="lake" src="images/lake.jpg" alt="lake image">
+    <img class="lake" src="styles/images/lake.jpg" alt="lake image">
+    <p></p>
     
+    <button class="accordion">Supplies</button>
+    <div class="panel">
+    <p>Obviously, certain supplies will be needed for these types of activities. Some being tools, and something to carry other supplies in.</p>
+    </div>
+
+    <button class="accordion">Health</button>
+    <div class="panel">
+    <p>Several things are needed to keep healthy while spending time outdoors, away from home. Some examples are water containers and first aid kits.</p>
+    </div>
+
+    <button class="accordion">Knowledge</button>
+    <div class="panel">
+    <p>Before leaving on an outing, it is important to know certain things beforehand, such as the climate and landscape</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
 </main>
+
 <footer>
-    
+
 </footer>
-</div>
+
 </body>
 </html>
