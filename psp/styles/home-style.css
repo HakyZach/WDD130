@@ -1,12 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display&display=swap');
 body{
     background-color:#b8860b
     
 }
+.home-grid{
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(4, 350px) 100px;
+}
 .hike, .lake{
     width: 500px;
+    
+}
+.hike{
+    grid-row:1/2;
+    grid-column:3/5;
+    box-shadow: 5px 5px 10px #42443b;
+}
+.lake{
+    grid-row:3/4;
+    grid-column:4/6;
+    box-shadow: 5px 5px 10px #42443b;
+}
+.p1{
+    font-family: "DM Serif Display";
+    grid-column:3/5;
+    grid-row:2/3;
+}
+.p2{
+    font-family: "DM Serif Display";
+    grid-column:2/3;
+    grid-row:4/5;
 }
 .accordion {
-    background-color: #F5F7DC;
+    background-color: #B38D97;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -15,14 +42,23 @@ body{
     border: none;
     outline: none;
     transition: 0.4s;
+    
 }
 .active, .accordion:hover {
-    background-color: #F5F7DC;
+    background-color: #B38D97;
 }
 .panel {
     padding: 0 18px;
-    background-color: #F5F7DC;
+    background-color: #B38D97;
     display: none;
     overflow: hidden;
     width: 52.3%;
+}
+nav a {
+    font-family: "Bree Serif";
+    color:  #2d70a7;
+    
+}
+footer{
+    background-color: #444;
 }
