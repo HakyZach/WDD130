@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display&display=swap');
+body{
+    background-color:#b8860b
+    
+}
+nav a {
+    font-family: "Bree Serif";
+    color:  #2d70a7;
+    
+}
+.hike-grid{
+    display: grid;
+    grid-template-columns: 100px repeat(4, 200px) 100px;
+    grid-template-rows: repeat(5, 200px);
+}
+.rocks{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.group{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+.p1{
+    font-family: "DM Serif Display";
+    grid-column: 2/4;
+    grid-row: 4/5;
+    text-align: center;
+}
+.p2{
+    font-family: "DM Serif Display";
+    grid-column: 5/7;
+    grid-row: 4/5;
+    text-align: center;
+}
+footer{
+    background-color: #444;
+}
