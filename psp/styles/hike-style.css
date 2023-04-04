@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display&display=swap');
+header{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
 body{
     background-color:#b8860b
     
 }
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
 nav a {
+    text-decoration: none;
+    font-size: 1.5em;
     font-family: "Bree Serif";
-    color:  #2d70a7;
-    
+    color:  #2d70a7; 
 }
 .hike-grid{
     display: grid;
@@ -34,5 +45,9 @@ nav a {
     text-align: center;
 }
 footer{
+    display: grid;
+    grid-template-columns: 200px auto;
     background-color: #444;
+    align-items: center;
+    justify-items: center;
 }
